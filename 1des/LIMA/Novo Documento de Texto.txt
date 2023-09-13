@@ -1,0 +1,4 @@
+Procedimento na linha de comando do git bash
+1:git clone "linkrepository"
+2:git add .
+3:git commit -m "      "

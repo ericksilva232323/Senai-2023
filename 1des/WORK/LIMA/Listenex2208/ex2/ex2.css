@@ -1,0 +1,26 @@
+main{
+    display:flex;
+    justify-content: center;
+}
+
+table{
+    height: 15vh;    
+}
+
+th{
+   width: 100px;
+   text-align:left;
+}
+
+ tr{
+    margin: 150px;
+ }
+
+ td{
+    margin: 150pk;
+}
+
+.Curso{
+    text-align: flex-center;
+    margin: 150px;
+}
