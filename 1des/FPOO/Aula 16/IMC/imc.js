@@ -33,11 +33,12 @@ class Paciente{
         }
     }
 showHTML(){
-    let str = `<label>Nome:</label><label>${this.nome}</label>`;
-    str += `<label>Peso:</label><label>Peso:${this.peso}</label>`;
-    str += `<label>Altura:</label><label>${this.altura}</label>`;
-    str += `<label>IMC:</label><label>${this.imc()}</label>`;
+    let str = `<label>${this.nome}</label><hr>`;
+    str += `<label>Peso:${this.peso}</label>`;
+    str += `<label>Altura:${this.altura}</label>`;
+    str += `<label>IMC:${this.imc().toFixed(2)}</label><hr>`;
     str += `<label>Diagnostico:</label><label>${this.dignosticar()}</label>`;
+    return str;
     }
 }
 const lista = [];
@@ -49,3 +50,9 @@ lista.push(new Paciente('Silvia Andrade', 60, 1.85));
 lista.push(new Paciente('Sueli Oliveira', 44, 1.65));
 lista.push(new Paciente('Pedro de Souza', 110, 1.85));
 
+const main = document.getElementById('imc');
+lista.forEach(lista =>{
+    const div = document.createElement('div');
+    div.innerHTML = lista.showHTML();
+    main.appendChild(div);
+})
