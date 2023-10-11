@@ -24,18 +24,19 @@ class Pessoa {
                     <td>${this.nascimento.toLocaleDateString()}</td>
                     <td>${this.sexo}</td>
                     <td>${this.idade}</td>
+                    <td>${this.classificar()}</td>
                 </tr>`;
     }
     classificar(){
-        if(this.calcIdade() > 0 && this.calcIdade() < 9){
+        if(this.idade >= 0 && this.idade <= 10){
             return "Criança";
-        }else if(this.calcIdade() > 10 && this.calcIdade() < 15 ){
+        }else if(this.idade >= 11 && this.idade <= 15 ){
             return "Pré Adolescente";
-        }else if(this.calcIdade() > 16 && this.calcIdade() < 21){
+        }else if(this.idade >= 16 && this.idade <= 20){
             return "Adolescente";
-        }else if(this.calcIdade() > 22 && this.calcIdade < 30){
+        }else if(this.idade >= 21 && this.idade <= 30){
             return "Jovem";
-        }else if(this.calcIdade() > 31 && this.calcIdade() < 59){
+        }else if(this.idade >= 31 && this.idade <= 59){
             return "Adulto";
         }else{
             return "Idoso";
@@ -67,4 +68,5 @@ function atualizaTabela() {
     pessoas.forEach((pessoa) => {
         corpo.innerHTML += pessoa.toTable();
     });
+
 }
