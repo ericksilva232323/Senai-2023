@@ -29,3 +29,32 @@ function ex3(){
     document.querySelector('#reaSAL').innerHTML = `Valor total com reajuste: ${sal*((indP/100)*indP)}`    
 }
 
+function ex4(){
+    let nomeT = document.getElementById('nomeT').value;
+    let vit = Number(document.getElementById('vit').value );
+    let emp = Number(document.getElementById('emp').value );
+
+    document.querySelector('#totalP').innerHTML = `Pontuação total de pontos de: ${nomet, emp + (vit * 3)}`
+}
+
+function ex5(){
+    let n = Number(document.getElementById('n').value);
+    if(n > 0){
+        document.querySelector('#apTela').innerHTML = `n - 1 = ${n - 1}; n + 1 = ${n + 1} `
+    }
+}
+
+function ex6(){
+    let veloAviao = 900;
+    let dist6 = Number(document.getElementById('dist6').value);
+    
+    document.querySelector('#tempo6').innerHTML = `tempo estimado de ${ dist6 / veloAviao }` 
+
+}
+function ex7(){
+    let caminhao = 18.000;
+    let alqueire = 250.000;
+    
+
+}
+
