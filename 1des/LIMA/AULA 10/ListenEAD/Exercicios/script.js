@@ -55,6 +55,6 @@ function ex7(){
     let caminhao = 18.000;
     let alqueire = 250.000;
     
-
+    document.querySelector('#viaCaminhao').innerHTML= `será necessario ${ alqueire / caminhao} viagens para transportar toda a colheita de laranja`
 }
 
