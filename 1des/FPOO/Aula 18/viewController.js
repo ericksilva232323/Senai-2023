@@ -11,6 +11,7 @@ function criarCard(){
     const cards = document.querySelector('.cards');
     let card = document.querySelector('.card');
     cards.innerHTML = '';
+    cards.appendChild(card);
     
     pessoas.forEach(pessoa => {
         let cardNew = card.cloneNode(true);
@@ -21,4 +22,8 @@ function criarCard(){
         cardNew.querySelector("#salarioLiquido").innerHTML = pessoa.salarioLiquido;
         cards.appendChild(cardNew);
     })
+}
+function remove(e){
+    e.parentNode.remove();
+    pessoas.splice(e, 1)
 }
