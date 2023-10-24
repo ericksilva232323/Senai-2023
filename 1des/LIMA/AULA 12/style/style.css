@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:rgb(196, 194, 194);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    background-color:rgb(196, 194, 194);
+    border-bottom: 3px solid black;
+}
+
+header div {
+    display: flex;
+    gap: 20px;
+}
+
+header div .red{
+    color: red;
+}
+
+header div .blue{
+    color: blue;
+}
+
+header div .green{
+    color:green;
+}
+
+header div .news{
+    
+}
+
+header .search input{
+    border-radius: 11px;
+    padding: 5px;    
+}
+
+main{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 40px;
+    align-items: center;
+}
+
+main .main1{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+
+}
+
+main .main1 div{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+}
+
+main .main1 div img{
+    width: 400px;
+    height: 350px;
+}
+
+main .main1 .coment{
+    display: flex;
+    flex-direction: column;
+    margin: 75px;
+    padding: 15px;
+    width: 400px;
+    text-align: baseline;
+}
+
+main .main2{
+    display: flex;
+    flex-direction:column;
+    margin: 150px;
+    margin-top: -400px;
+    background-color:white;
+}
+
+main .main2 .TA{
+    text-align:left;
+}
+
+main .main2 p{
+    margin: 25px;
+}
+
+
