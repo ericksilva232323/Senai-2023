@@ -1,0 +1,211 @@
+{
+    "usuarios":[
+        {
+            "id": 1,
+            "nome": "Erick S. J.",
+            "email": "erick@js.com",
+            "senha": "1des",
+            "tipo": "admin"
+        },
+
+        {
+            "id": 2,
+            "nome": " Maria C. E.",
+            "email": "cecilia@js.com",
+            "senha": "1des",
+            "tipo": "comum"
+        },
+
+        {
+            "id": 3,
+            "nome": "Camilla P. S.",
+            "email": "camilla@js.com",
+            "senha": "1des",
+            "tipo": "comum"
+        }
+    ],
+    "itens": [
+        {
+            "id": 1,
+            "nome": "Nike Air force V'1 low Custom white & blue",
+            "descricao": "Size:36/45",
+            "img": "../assets/airforceblue.jpg",
+            "preco": 204.99
+        },
+        {
+            "id":"2",
+            "nome":"Nike Air Force V'1 low Classic",
+            "descriao":"Size:36/45",
+            "img":"../assets/tenis.jpg",
+            "preco":149.99
+        },
+        {
+            "id":"3",
+            "nome":"Nike Air force Dunk low Custom white & blue",
+            "descricao":"Size:36/45",
+            "img":"../assets/dunkazul.jpg",
+            "preco":214.99
+        },
+        {
+            "id":"4",
+            "nome":"Nike Air force Dunk low Custim Black & White",
+            "descricao":"Size:36/45",
+            "img":"../assets/dunklow.jpg",
+            "preco":209.99
+        },
+        {
+            "id":"5",
+            "nome":"Casio Retro Gold Water resistent",
+            "descricao":"Masculino  e Feminino",
+            "img":"../assets/casio.jpg",
+            "preco":319.99
+        },
+        {
+            "id":"6",
+            "nome":"Cassio Retro Silver Water resistent",
+            "descricao":"Masculino e Femminino",
+            "img":"../assets/relog.jpg",
+            "preco":289.99
+        },
+        {
+            "id":"7",
+            "nome":"Bone Nike Preto",
+            "descricao":"Tamanho unico",
+            "img":"../assets/bone.jpg",
+            "preco":59.99
+        },
+        {
+            "id":"8",
+            "nome":"Nike Meia Esportiva",
+            "descricao":"Tamanho unico para exercicos físicos",
+            "img":"../assets/meia.jpg",
+            "preco":29.99
+        },
+        {
+            "id":"9",
+            "nome":"Shorts Branco Nike",
+            "descricao":"Size:36/48",
+            "img":"../assets/shortsbranco.jpg",
+            "preco":49.99
+        },
+        {
+            "id":"10",
+            "nome":"Shorts Preto Nike",
+            "descricao":"Size:36/48",
+            "img":"../assets/shorts.jpg",
+            "preco":44.99
+        },
+        {
+            "id":"11",
+            "nome":"Shorts Jeans Feminino claro",
+            "descricao":"Size:36/48",
+            "img":"../assets/shortsfe.jpg",
+            "preco":62.90
+        },
+        {
+            "id":"12",
+            "nome":"Shorts Jeans Feminino escuro",
+            "descricao":"Size:36/48",
+            "img":"../assets/shortsfem.jpg",
+            "preco":59.90
+        }
+    ],
+    "vendas": [
+        {
+            "id": 1,
+            "data": "2023-11-05T08:50:00.000Z",
+            "usuario": 2,
+            "item": 1,
+            "quantidade": 1,
+            "valorUnitario": 204.99
+        },
+        {
+            "id": 2,
+            "data": "2023-11-05T09:35:00.000Z",
+            "usuario": 2,
+            "item": 2,
+            "quantidade": 1,
+            "valorUnitario": 149.99
+        },
+        {
+            "id": 3,
+            "data": "2023-11-05T12:00:00.000Z",
+            "usuario": 2,
+            "item": 3,
+            "quantidade": 1,
+            "valorUnitario": 214.99
+        },
+        {
+            "id": 4,
+            "data": "2023-11-05T08:50:00.000Z",
+            "usuario": 2,
+            "item": 6,
+            "quantidade": 1,
+            "valorUnitario": 209.99
+        },
+        {
+            "id": 5,
+            "data": "2023-11-06T08:20:00.000Z",
+            "usuario": 3,
+            "item": 5,
+            "quantidade": 2,
+            "valorUnitario": 319.99
+        },
+        {
+            "id": 6,
+            "data": "2023-11-06T10:40:00.000Z",
+            "usuario": 3,
+            "item": 4,
+            "quantidade": 1,
+            "valorUnitario": 289.99
+        },
+        {
+            "id": 7,
+            "data": "2023-11-06T11:50:00.000Z",
+            "usuario": 3,
+            "item": 4,
+            "quantidade": 2,
+            "valorUnitario": 59.99
+        },
+        {
+            "id": 8,
+            "data": "2023-11-06T12:50:00.000Z",
+            "usuario": 2,
+            "item": 6,
+            "quantidade": 1,
+            "valorUnitario": 29.99
+        },
+        {
+            "id": 9,
+            "data": "2023-11-07T08:50:00.000Z",
+            "usuario": 2,
+            "item": 7,
+            "quantidade": 1,
+            "valorUnitario": 49.99
+        },
+        {
+            "id": 10,
+            "data": "2023-11-07T10:20:00.000Z",
+            "usuario": 2,
+            "item": 2,
+            "quantidade": 1,
+            "valorUnitario": 44.99
+        },
+        {
+            "id": 11,
+            "data": "2023-11-07T10:45:00.000Z",
+            "usuario": 3,
+            "item": 1,
+            "quantidade": 2,
+            "valorUnitario": 62.90
+        },
+        {
+            "id": 12,
+            "data": "2023-11-07T11:05:00.000Z",
+            "usuario": 1,
+            "item": 3,
+            "quantidade": 1,
+            "valorUnitario": 59.90
+        }
+    ]
+}

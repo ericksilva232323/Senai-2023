@@ -1,3 +1,26 @@
 .oculto{
     display: none;
 }
+
+body{
+    margin: 0;
+    padding:0;
+    background-image: url(../assets/imgback.jpg);
+}
+/*header login e arquivo*/
+body header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+body header .row justify-content-around{
+    display: flex;
+    flex-direction:row;
+    justify-content: center ;
+}
+
+/* modelos */
+
+

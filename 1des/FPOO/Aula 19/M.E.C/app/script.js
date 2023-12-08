@@ -8,7 +8,7 @@ const nome = document.getElementById("nome");
 const item = document.getElementById("item");
 const container = document.getElementById("container");
 const formLogin = document.getElementById("formLogin");
-const formVender = document.getElementById("formVender");
+const formComprar = document.getElementById("formComprar");
 const formItem = document.getElementById("formItem");
 
 var dados = {
@@ -54,7 +54,7 @@ function preencherCards() {
 				<p class="card-text">Tipo e Descrição</p>
 				<img src="../assets/noimage.jpg"
 					alt="Imagem Padrão" class="img">
-					<button class="btn btn-secondary" data-toggle="modal" data-target="#modalVender">Vender</button>
+					<button class="btn btn-secondary" data-toggle="modal" data-target="#modalComprar">Comprar</button>
                     <button class="btn btn-danger oculto">Excluir</button>
 					<h4 class="card-footer text-right">Preço</h4>
 			</div>`;
@@ -119,33 +119,34 @@ function logout() {
 
 //CRUD - READ
 function preencherTotal(indice) {
-    formVender.id.value = dados.itens[indice].id;
-    formVender.preco.value = dados.itens[indice].preco;
-    let quantidade = parseInt(formVender.quantidade.value);
-    let preco = parseFloat(formVender.preco.value);
-    formVender.total.value = (quantidade * preco).toFixed(2);
+    formComprar.id.value = dados.itens[indice].id;
+    formComprar.preco.value = dados.itens[indice].preco;
+    let quantidade = parseInt(formComprar.quantidade.value);
+    let preco = parseFloat(formComprar.preco.value);
+    Comprar.total.value = (quantidade * preco).toFixed(2);
 }
 
-formVender.addEventListener("change", () => {
-    let quantidade = parseInt(formVender.quantidade.value);
-    let preco = parseFloat(formVender.preco.value);
-    formVender.total.value = (quantidade * preco).toFixed(2);
+formComprar.addEventListener("change", () => {
+    let quantidade = parseInt(formComprar.quantidade.value);
+    let preco = parseFloat(formComprar.preco.value);
+    formComprar.total.value = (quantidade * preco).toFixed(2);
+    
 });
 
-//CRUD - CREATE Venda
-formVender.addEventListener("submit", e => {
+//CRUD - CREATE Compra
+formComprar.addEventListener("submit", e => {
     e.preventDefault();
     const venda = {
         id: dados.vendas[dados.vendas.length - 1].id + 1,
         data: (new Date()).toISOString(),
         usuario: usuario.id,
-        item: parseInt(formVender.id.value),
-        quantidade: parseInt(formVender.quantidade.value),
-        valorUnitario: parseFloat(formVender.preco.value),
+        item: parseInt(formComprar.id.value),
+        quantidade: parseInt(formComprar.quantidade.value),
+        valorUnitario: parseFloat(formComprar.preco.value),
     }
     dados.vendas.push(venda);
-    $('#modalVender').modal('hide');
-    alert("Venda registrada com sucesso, não se esqueça de salvar os dados.");
+    $('#modalComprar').modal('hide');
+    alert("Compra registrada com sucesso, não se esqueça de salvar os dados.");
 });
 
 //CRUD - READALL Vendas
